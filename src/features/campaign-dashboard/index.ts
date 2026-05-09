@@ -1,0 +1,8 @@
+export { CandidateTable } from './components/CandidateTable'
+export { MetricPanel } from './components/MetricPanel'
+export { EmbeddingProjection } from './components/EmbeddingProjection'
+export { CampaignComparison } from './components/CampaignComparison'
+export { DesignFunnel } from './components/DesignFunnel'
+export { CampaignSummary } from './components/CampaignSummary'
+export { useDuckDB } from './hooks/useDuckDB'
+export { useCampaignData } from './hooks/useCampaignData'

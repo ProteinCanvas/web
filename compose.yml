@@ -1,0 +1,5 @@
+services:
+  app:
+    image: ghcr.io/proteincanvas/web:latest
+    ports:
+      - "3000:80"
