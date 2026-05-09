@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code
+.claude/
+
+# Test coverage
+coverage/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Public samples (large binary data)
+public/samples/
+
+docs/

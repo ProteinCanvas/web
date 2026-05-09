@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    location __BASE_PATH__/ {
+        rewrite ^__BASE_PATH__(/.*)$ $1 break;
+        try_files $uri $uri.html $uri/ /index.html;
+        add_header Cross-Origin-Opener-Policy  "same-origin"   always;
+        add_header Cross-Origin-Embedder-Policy "require-corp" always;
+    }
+
+    location ~* \.wasm$ {
+        default_type application/wasm;
+        add_header Cross-Origin-Opener-Policy  "same-origin"   always;
+        add_header Cross-Origin-Embedder-Policy "require-corp" always;
+    }
+}
